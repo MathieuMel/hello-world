@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <recordTypes>
+        <fullName>CIN_Service_Territory_Work_Type</fullName>
+        <active>true</active>
+        <label>CIN Service Territory Work Type</label>
+    </recordTypes>
+</CustomObject>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Cinetik</fullName>
+        <default>false</default>
+        <label>Cinetik</label>
+    </customValue>
+    <customValue>
+        <fullName>CAR_INSURANCE_GROUP</fullName>
+        <default>false</default>
+        <label>CAR INSURANCE GROUP</label>
+    </customValue>
+    <masterLabel>IT Org</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

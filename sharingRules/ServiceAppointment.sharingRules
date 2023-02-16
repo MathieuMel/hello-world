@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SharingRules xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sharingOwnerRules>
+        <fullName>Service_Appoint_DE_sharing</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>Service Appoint DE sharing</label>
+        <sharedTo>
+            <group>DE_CIN_Data_Access</group>
+        </sharedTo>
+        <sharedFrom>
+            <group>DE_CIN_Data_Access</group>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>Service_Appoint_ES_sharing</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>Service Appoint ES sharing</label>
+        <sharedTo>
+            <group>ES_CIN_Data_Access</group>
+        </sharedTo>
+        <sharedFrom>
+            <group>ES_CIN_Data_Access</group>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>Service_Appoint_FR_sharing</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>Service Appoint FR sharing</label>
+        <sharedTo>
+            <group>FR_CIN_Data_Access</group>
+        </sharedTo>
+        <sharedFrom>
+            <group>FR_CIN_Data_Access</group>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>Service_Appoint_IT_sharing</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>Service Appoint IT sharing</label>
+        <sharedTo>
+            <group>ITA_CIN_Data_Access</group>
+        </sharedTo>
+        <sharedFrom>
+            <group>ITA_CIN_Data_Access</group>
+        </sharedFrom>
+    </sharingOwnerRules>
+</SharingRules>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <recordTypes>
+        <fullName>CIN_Event_Record_Type</fullName>
+        <active>true</active>
+        <compactLayoutAssignment>CIN_Compact_Layout_Event</compactLayoutAssignment>
+        <label>CIN Event Record Type</label>
+        <picklistValues>
+            <picklist>Subject</picklist>
+            <values>
+                <fullName>Call</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Email</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Meeting</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Send Letter%2FQuote</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Type</picklist>
+            <values>
+                <fullName>Call</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Email</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Meeting</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <validationRules>
+        <fullName>CIN_Event_VR001_AssignedToBySupervior</fullName>
+        <active>true</active>
+        <description>Validation Rule to check the profile of the user reassining : &quot;If the field Service Resource&quot; is updated on an Assigned Resource with the Record Type (CIN - Assigned Resource) by a user whose profile is not CIN - Supervisor then block the update and displ</description>
+        <errorConditionFormula>AND(
+OR(
+$Profile.Name = &quot;CIN - Agent&quot;,
+$Profile.Name = &quot;CIN - Auditor&quot;,
+$Profile.Name = &quot;CIN - API&quot;
+
+),
+(ISCHANGED(  OwnerId ) )
+)</errorConditionFormula>
+        <errorDisplayField>OwnerId</errorDisplayField>
+        <errorMessage>You are not allowed to reassign this appointment. Contact your supervisor</errorMessage>
+    </validationRules>
+</CustomObject>

@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <fullName>MinutesOfMeeting__c</fullName>
+        <description>Open text field for the agent to capture the minutes of the meeting</description>
+        <externalId>false</externalId>
+        <label>Minutes of Meeting</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>Reason__c</fullName>
+        <externalId>false</externalId>
+        <label>Reason</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <controllingField>Status</controllingField>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>No anwser</fullName>
+                    <default>false</default>
+                    <label>No anwser</label>
+                </value>
+                <value>
+                    <fullName>Call back missed</fullName>
+                    <default>false</default>
+                    <label>Call back missed</label>
+                </value>
+                <value>
+                    <fullName>Consultation required</fullName>
+                    <default>false</default>
+                    <label>Consultation required</label>
+                </value>
+                <value>
+                    <fullName>Postponed</fullName>
+                    <default>false</default>
+                    <label>Postponed</label>
+                </value>
+                <value>
+                    <fullName>Call disconnected</fullName>
+                    <default>false</default>
+                    <label>Call disconnected</label>
+                </value>
+                <value>
+                    <fullName>Call Rescheduled</fullName>
+                    <default>false</default>
+                    <label>Call Rescheduled</label>
+                </value>
+                <value>
+                    <fullName>Competition</fullName>
+                    <default>false</default>
+                    <label>Competition</label>
+                </value>
+                <value>
+                    <fullName>Service</fullName>
+                    <default>false</default>
+                    <label>Service</label>
+                </value>
+            </valueSetDefinition>
+            <valueSettings>
+                <controllingFieldValue>Cannot Complete</controllingFieldValue>
+                <valueName>No anwser</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Cannot Complete</controllingFieldValue>
+                <valueName>Call back missed</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Cannot Complete</controllingFieldValue>
+                <valueName>Consultation required</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Cannot Complete</controllingFieldValue>
+                <valueName>Postponed</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Cannot Complete</controllingFieldValue>
+                <valueName>Call disconnected</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Canceled</controllingFieldValue>
+                <valueName>Call Rescheduled</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Canceled</controllingFieldValue>
+                <valueName>Competition</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Canceled</controllingFieldValue>
+                <valueName>Service</valueName>
+            </valueSettings>
+        </valueSet>
+    </fields>
+    <recordTypes>
+        <fullName>CIN_Service_Appointment</fullName>
+        <active>true</active>
+        <compactLayoutAssignment>Compact_Layout_Service_Appointment</compactLayoutAssignment>
+        <description>Record Type for CIN Service Appointment</description>
+        <label>CIN Service Appointment</label>
+        <picklistValues>
+            <picklist>Reason__c</picklist>
+            <values>
+                <fullName>Call Rescheduled</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Call back missed</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Call disconnected</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Competition</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Consultation required</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>No anwser</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Postponed</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Service</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Status</picklist>
+            <values>
+                <fullName>Canceled</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Cannot Complete</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Completed</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>In Progress</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Scheduled</fullName>
+                <default>true</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+</CustomObject>

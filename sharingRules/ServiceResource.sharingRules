@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SharingRules xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sharingOwnerRules>
+        <fullName>Service_Resource_DE_sharing</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>Service Resource DE sharing</label>
+        <sharedTo>
+            <group>DE_CIN_Data_Access</group>
+        </sharedTo>
+        <sharedFrom>
+            <group>DE_CIN_Data_Access</group>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>Service_Resource_ES_sharing</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>Service Resource ES sharing</label>
+        <sharedTo>
+            <group>ES_CIN_Data_Access</group>
+        </sharedTo>
+        <sharedFrom>
+            <group>ES_CIN_Data_Access</group>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>Service_Resource_FR_sharing</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>Service Resource FR sharing</label>
+        <sharedTo>
+            <group>FR_CIN_Data_Access</group>
+        </sharedTo>
+        <sharedFrom>
+            <group>FR_CIN_Data_Access</group>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>Service_Resource_IT_sharing</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>Service Resource IT sharing</label>
+        <sharedTo>
+            <group>ITA_CIN_Data_Access</group>
+        </sharedTo>
+        <sharedFrom>
+            <group>ITA_CIN_Data_Access</group>
+        </sharedFrom>
+    </sharingOwnerRules>
+</SharingRules>
